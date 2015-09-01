@@ -1,0 +1,145 @@
+.content__form {
+  padding: 72px 104px 0 107px;
+}
+
+.text-items {
+  &.text-items__repo {
+    margin-top: 60px;
+  }
+}
+
+.text-items__item {
+  margin-bottom: 28px;
+
+  &.text-items__item--radio {
+    padding-top: 10px;
+  }
+}
+
+.text-items__item {
+  @include clearfix;
+}
+
+.text-items__item p {
+  font-size: 11px;
+  color: #3d3d3d;
+  width: 100%;
+  float: left;
+}
+
+.text-item__label {
+  width: 295px;
+  font-size: 22px;
+  font-weight: bold;
+  float: left;
+  color: #444444;
+
+  &.text-item__label--small {
+    width: 115px;
+  }
+  &.text-item__label--radio {
+    width: auto;
+    margin-right: 30px;
+  }
+  a {
+    color: #174d8a;
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 6px;
+  }
+}
+
+.text-item__input {
+  width: 470px;
+  float: right;
+  &.text-item__input--small {
+    width: 670px;
+  }
+  &.text-item__input--radio {
+    float: left;
+    width: auto;
+  }
+}
+
+.form__input__text {
+  font-family: $font-input;
+  font-size: 22px;
+  color: #174d8a;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px #c0c0c0 solid;
+  padding-bottom: 5px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.text-items--skills {
+  margin-top: 50px;
+  @include clearfix;
+}
+
+.skills__heading {
+  color: #444444;
+  font-weight: bold;
+  font-size: 22px;
+  display: inline-block;
+  margin-bottom: 55px;
+  width: 100%;
+  &.skills__heading--slider {
+    margin-bottom: 25px;
+  }
+}
+
+.text-items--skills ul {
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.text-items--skills ul li {
+  margin-bottom: 12px;
+  label {
+    color: #444444;
+    font-weight: normal;
+    font-size: 17px;
+  }
+  .stylized:not(checked) + label:before {
+    width: 18px;
+    height: 18px;
+  }
+  .stylized:not(checked) + label:before {
+    bottom: 2px;
+  }
+}
+
+.text-items--slider {
+  margin-top: 60px;
+}
+
+.form__submit {
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.form__submit input {
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  line-height: 43px;
+  height: 43px;
+  padding: 0 42px;
+  background: #74cc45;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}

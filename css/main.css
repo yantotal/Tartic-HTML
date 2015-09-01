@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic-ext);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background: #c3c3c3 url(../img/light.png) no-repeat center top;
+  background-size: cover;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 170px;
+  font-family: "Open Sans", "Arial", sans-serif; }
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  background: #f6f6f6;
+  -webkit-box-shadow: 0 1px 9px rgba(184, 184, 184, 0.75);
+  -moz-box-shadow: 0 1px 9px rgba(184, 184, 184, 0.75);
+  box-shadow: 0 1px 9px rgba(184, 184, 184, 0.75); }
+
+h1 {
+  font-size: 59px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center; }
+
+.header {
+  height: 120px;
+  padding: 45px 0 0 65px; }
+
+.header__logo {
+  background: url("../img/logo.png");
+  width: 120px;
+  height: 120px;
+  display: inline-block; }
+
+.content__form {
+  padding: 72px 104px 0 107px; }
+
+.text-items.text-items__repo {
+  margin-top: 60px; }
+
+.text-items__item {
+  margin-bottom: 28px; }
+  .text-items__item.text-items__item--radio {
+    padding-top: 10px; }
+
+.text-items__item::after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.text-items__item p {
+  font-size: 11px;
+  color: #3d3d3d;
+  width: 100%;
+  float: left; }
+
+.text-item__label {
+  width: 295px;
+  font-size: 22px;
+  font-weight: bold;
+  float: left;
+  color: #444444; }
+  .text-item__label.text-item__label--small {
+    width: 115px; }
+  .text-item__label.text-item__label--radio {
+    width: auto;
+    margin-right: 30px; }
+  .text-item__label a {
+    color: #174d8a;
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 6px; }
+
+.text-item__input {
+  width: 470px;
+  float: right; }
+  .text-item__input.text-item__input--small {
+    width: 670px; }
+  .text-item__input.text-item__input--radio {
+    float: left;
+    width: auto; }
+
+.form__input__text {
+  font-family: "Trebuchet MS Regular", "Arial", sans-serif;
+  font-size: 22px;
+  color: #174d8a;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px #c0c0c0 solid;
+  padding-bottom: 5px; }
+  .form__input__text:focus {
+    outline: none; }
+
+.text-items--skills {
+  margin-top: 50px; }
+  .text-items--skills::after {
+    content: '';
+    display: table;
+    clear: both; }
+
+.skills__heading {
+  color: #444444;
+  font-weight: bold;
+  font-size: 22px;
+  display: inline-block;
+  margin-bottom: 55px;
+  width: 100%; }
+  .skills__heading.skills__heading--slider {
+    margin-bottom: 25px; }
+
+.text-items--skills ul {
+  width: 30%;
+  float: left;
+  margin-right: 5%; }
+  .text-items--skills ul:last-child {
+    margin-right: 0; }
+
+.text-items--skills ul li {
+  margin-bottom: 12px; }
+  .text-items--skills ul li label {
+    color: #444444;
+    font-weight: normal;
+    font-size: 17px; }
+  .text-items--skills ul li .stylized:not(checked) + label:before {
+    width: 18px;
+    height: 18px; }
+  .text-items--skills ul li .stylized:not(checked) + label:before {
+    bottom: 2px; }
+
+.text-items--slider {
+  margin-top: 60px; }
+
+.form__submit {
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 100px; }
+
+.form__submit input {
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  line-height: 43px;
+  height: 43px;
+  padding: 0 42px;
+  background: #74cc45;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer; }
+  .form__submit input:hover {
+    opacity: 0.8; }
+
+.stylized {
+  vertical-align: top; }
+
+.stylized + label {
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  color: #444444; }
+
+.stylized:not(checked) {
+  position: absolute;
+  opacity: 0; }
+
+.stylized:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 30px;
+  margin-right: 25px; }
+
+.stylized:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background: #d7dcde; }
+
+.stylized:checked + label:before {
+  background: #74cc45 url(../img/radio.png) no-repeat center center; }
+
+.sliderjs {
+  width: 100%;
+  height: 17px;
+  background: white;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px; }
+
+.slider__block--value {
+  height: 17px;
+  background: #74cc45;
+  transition: 0.3s;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px; }
+  .slider__block--value.slider__block__value--php {
+    background: #fcc95c; }
+
+.slider__block .slider__labels {
+  width: 100%;
+  color: #444444;
+  font-size: 11px;
+  font-weight: bold;
+  margin-top: 15px; }
+
+.slider__block .slider__labels label {
+  line-height: 19px;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer; }
+  .slider__block .slider__labels label.level_0 {
+    width: 158px; }
+  .slider__block .slider__labels label.level_1 {
+    width: 220px; }
+  .slider__block .slider__labels label.level_2 {
+    width: 180px;
+    text-align: center; }
+  .slider__block .slider__labels label.level_3 {
+    width: 222px;
+    text-align: right; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,31 @@
+.stylized {
+  vertical-align: top;
+}
+.stylized + label {
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  color: #444444;
+}
+.stylized:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.stylized:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 30px;
+  margin-right: 25px;
+}
+.stylized:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background: #d7dcde;
+}
+.stylized:checked + label:before {
+  background: #74cc45 url(../img/radio.png) no-repeat center center;
+}

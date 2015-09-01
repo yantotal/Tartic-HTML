@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <span class="header__logo"></span>
+            </div>
+            <div class="content">
+                <h1>Анкета</h1>
+                <div class="content__form">
+                    <form action="/" method="POST">
+                        <div class="text-items">
+                            <div class="text-items__item">
+                                <div class="text-item__label">Ваше ФИО:</div>
+                                <div class="text-item__input">
+                                    <input type="text" name="data[fio]" value="Иванов Иван Иванович" class="form__input__text">
+                                </div>
+                            </div>
+                            <div class="text-items__item">
+                                <div class="text-item__label">Год рождения:</div>
+                                <div class="text-item__input">
+                                    <input type="text" name="data[year]" value="1988" class="form__input__text">
+                                </div>
+                            </div>
+                            <div class="text-items__item">
+                                <div class="text-item__label">Место жительства:</div>
+                                <div class="text-item__input">
+                                    <input type="text" name="data[place]" value="г. Москва, Россия" class="form__input__text">
+                                </div>
+                            </div>
+                            <div class="text-items__item">
+                                <div class="text-item__label text-item__label--small">Skype:</div>
+                                <div class="text-item__input text-item__input-small">
+                                    <input type="text" name="data[skype]" value="ivanov" class="form__input__text">
+                                </div>
+                            </div>
+                            <div class="text-items__item">
+                                <div class="text-item__label text-item__label--small">Почта:</div>
+                                <div class="text-item__input text-item__input-small">
+                                    <input type="text" name="data[email]" value="ivanov@gmail.com" class="form__input__text">
+                                </div>
+                            </div>
+                            <div class="text-items__item text-items__item--radio">
+                                <div class="text-item__label text-item__label--radio">О вакансии узнали на сайте <a href="http://moykrug.ru/" target="_blank">moykrug.ru</a></div>
+                                <div class="text-item__input text-item__input--radio">
+                                    <input type="radio" class="stylized stylized--radio" id="yes" name="moukrug" value="yes" checked>
+                                    <label for="yes">Да</label>
+                                    <input type="radio" class="stylized stylized--radio" id="no" name="moukrug" value="no">
+                                    <label for="no">Нет</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-items text-items--skills">
+                            <span class="skills__heading">Навыки</span>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" class="stylized stylized--checkbox" id="bem" name="data[skills]" value="bem" checked>
+                                    <label for="bem">Методология БЭМ</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="stylized stylized--checkbox" id="grunt" name="data[skills]" value="grunt">
+                                    <label for="grunt">Использую GRUNT</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="stylized stylized--checkbox" id="gulp" name="data[skills]" value="gulp">
+                                    <label for="gulp">Использую GULP</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="stylized stylized--checkbox" id="sass" name="data[skills]" value="sass">
+                                    <label for="sass">SASS</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="stylized stylized--checkbox" id="less" name="data[skills]" value="less">
+                                    <label for="less">LESS</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="stylized stylized--checkbox" id="coffeescript" name="data[skills]" value="coffeescript">
+                                    <label for="coffeescript">CoffeeScript</label>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" class="stylized stylized--checkbox" id="angular" name="data[skills]" value="angular" checked>
+                                    <label for="angular">Angular</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="stylized stylized--checkbox" id="jquery" name="data[skills]" value="jquery">
+                                    <label for="jquery">jQuery</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="stylized stylized--checkbox" id="avocode" name="data[skills]" value="avocode">
+                                    <label for="avocode">Использую Avocode</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="stylized stylized--checkbox" id="responsive" name="data[skills]" value="responsive">
+                                    <label for="responsive">Адаптивная верстка</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="stylized stylized--checkbox" id="git" name="data[skills]" value="git">
+                                    <label for="git">Использую Git</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="stylized stylized--checkbox" id="php" name="data[skills]" value="php">
+                                    <label for="php">PHP</label>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" class="stylized stylized--checkbox" id="eng" name="data[skills]" value="eng" checked>
+                                    <label for="eng">Хороший английский</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="stylized stylized--checkbox" id="wp" name="data[skills]" value="wp">
+                                    <label for="wp">Знаю Wordpress</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="stylized stylized--checkbox" id="woocommerce" name="data[skills]" value="woocommerce">
+                                    <label for="woocommerce">Опыт с Woocommerce</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="stylized stylized--checkbox" id="wp_plugs" name="data[skills]" value="wp_plugs">
+                                    <label for="wp_plugs">Пишу плагины WP</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-items text-items--slider">
+                            <span class="skills__heading skills__heading--slider">Уровень знания JavaScript</span>
+                            <div class="slider__block">
+                                <div class="slider__block--line sliderjs">
+                                    <div class="slider__block--value" style="width: 82%;"></div>
+                                </div>
+                                <div class="slider__labels">
+                                    <label data-skill="0" class="level_0">Не знаю</label>
+                                    <label data-skill="33" class="level_1">Использую готовые решения</label>
+                                    <label data-skill="66" class="level_2">Использую готовые решения<br>и умею их переделывать</label>
+                                    <label data-skill="100" class="level_3">Пишу сложные скрипты</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-items text-items--slider">
+                            <span class="skills__heading skills__heading--slider">Уровень знания PHP</span>
+                            <div class="slider__block">
+                                <div class="slider__block--line sliderjs">
+                                    <div class="slider__block--value slider__block__value--php" style="width: 66%;"></div>
+                                </div>
+                                <div class="slider__labels">
+                                    <label data-skill="0" class="level_0">Не знаю</label>
+                                    <label data-skill="33" class="level_1">Базовые знания</label>
+                                    <label data-skill="66" class="level_2">Хороший уровень знаний</label>
+                                    <label data-skill="100" class="level_3">Отличный уровень</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-items text-items__repo">
+                            <div class="text-items__item">
+                                <div class="text-item__label">Ссылка на репозиторий:</div>
+                                <div class="text-item__input">
+                                    <input type="text" name="data[rep]" value="http://myportfolio.ru" class="form__input__text">
+                                </div>
+                                <p>Или на портфолио (если есть)</p>
+                            </div>
+                        </div>
+                        <div class="form__submit">
+                            <input type="submit" value="Отправить">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
